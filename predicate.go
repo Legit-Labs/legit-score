@@ -1,4 +1,4 @@
-package legit-score
+package legitscore
 
 type LegitScorePredicate struct {
 	Repository string  `json:"repository"`
