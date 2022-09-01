@@ -1,0 +1,5 @@
+{
+	"repository": "<REPOSITORY URL>",
+	"timestamp": "<RFC1123 TIMESTAMP>",
+	"score": float64, // the Legit score associated with the repository at the timestamp (0-10)
+}
