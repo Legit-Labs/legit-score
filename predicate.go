@@ -11,6 +11,8 @@ type LegitScorePredicate struct {
 	Score      float64 `json:"score"`
 }
 
+const Schema = "https://raw.githubusercontent.com/Legit-Labs/legit-score/cb1dcd92f893d71dc32b1ed729023b803647532e/legit-score-predicate.json.schema"
+
 func FetchScore(repo string, api_token string) *LegitScorePredicate {
 	return &LegitScorePredicate{
 		Repository: repo,
