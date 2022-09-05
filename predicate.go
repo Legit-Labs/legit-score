@@ -3,12 +3,19 @@ package legitscore
 import (
 	"fmt"
 	"time"
+
+	intoto "github.com/in-toto/in-toto-golang/in_toto"
 )
 
 type LegitScorePredicate struct {
 	Repository string  `json:"repository"`
 	Timestamp  string  `json:"timestamp"`
 	Score      float64 `json:"score"`
+}
+
+type LegitScoreStatement struct {
+	intoto.StatementHeader
+	Predicate LegitScorePredicate
 }
 
 const Schema = "https://raw.githubusercontent.com/Legit-Labs/legit-score/cb1dcd92f893d71dc32b1ed729023b803647532e/legit-score-predicate.json.schema"
