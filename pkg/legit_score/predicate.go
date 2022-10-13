@@ -18,7 +18,7 @@ type LegitScoreStatement struct {
 	Predicate LegitScorePredicate
 }
 
-const Schema = "https://raw.githubusercontent.com/Legit-Labs/legit-score/cb1dcd92f893d71dc32b1ed729023b803647532e/legit-score-predicate.json.schema"
+const Schema = "https://raw.githubusercontent.com/Legit-Labs/legit-score/07bf6fa16d2b2543d3280ad0ee5879cfed16a43a/pub/legit-score-predicate.json.schema"
 
 func NewLegitScorePredicate(repo string, score float64) *LegitScorePredicate {
 	return &LegitScorePredicate{
