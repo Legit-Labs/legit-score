@@ -1,4 +1,4 @@
-package legitscore
+package legit_score
 
 import (
 	"fmt"
@@ -20,12 +20,27 @@ type LegitScoreStatement struct {
 
 const Schema = "https://raw.githubusercontent.com/Legit-Labs/legit-score/cb1dcd92f893d71dc32b1ed729023b803647532e/legit-score-predicate.json.schema"
 
-func FetchScore(repo string, api_token string) *LegitScorePredicate {
+func NewLegitScorePredicate(repo string, score float64) *LegitScorePredicate {
 	return &LegitScorePredicate{
 		Repository: repo,
 		Timestamp:  time.Now().Format(time.RFC1123),
-		Score:      7, // TODO query Legit
+		Score:      score,
 	}
+}
+
+func fetchScoreForRepo(repo string, apiToken string) (float64, error) {
+	return 7, nil // TODO query Legit
+}
+
+func FetchScore(repo string, apiToken string) (*LegitScorePredicate, error) {
+	score, err := fetchScoreForRepo(repo, apiToken)
+	if err != nil {
+		return nil, err
+	}
+
+	predicate := NewLegitScorePredicate(repo, score)
+
+	return predicate, nil
 }
 
 func (l *LegitScorePredicate) Verify(repo string, min_score float64) error {
