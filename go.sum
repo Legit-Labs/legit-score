@@ -1,3 +1,5 @@
+github.com/Legit-Labs/legit-score v0.0.0-20221013110758-c7a635e5eac4 h1:D67RMSQqvsve9n4iqDRx2nKIRkxpn/Rrqxp7gII/N8A=
+github.com/Legit-Labs/legit-score v0.0.0-20221013110758-c7a635e5eac4/go.mod h1:qEGByhTdbMfcCQQRfXO83SW1MUGuRExlAJQ3W1JMtjE=
 github.com/codahale/rfc6979 v0.0.0-20141003034818-6a90f24967eb h1:EDmT6Q9Zs+SbUoc7Ik9EfrFqcylYqgPZ9ANSbTAntnE=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/google/go-cmp v0.5.9 h1:O2Tfq5qg4qc4AmwVlvv0oLiVAGB7enBSJ2x2DqQFi38=
