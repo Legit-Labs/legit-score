@@ -1,6 +1,6 @@
-module github.com/legit-labs/legit-score
+module github.com/Legit-Labs/legit-score
 
-go 1.18
+go 1.19
 
 require github.com/in-toto/in-toto-golang v0.4.0
 
