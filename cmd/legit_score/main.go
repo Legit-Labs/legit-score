@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"flag"
 	"fmt"
 	"log"
@@ -30,5 +31,7 @@ func main() {
 		log.Panicf("failed to fetch score: %v", err)
 	}
 
-	fmt.Printf("%v", string(predicate))
+	jsonized, err := json.Marshal(predicate)
+
+	fmt.Printf("%v", string(jsonized))
 }
